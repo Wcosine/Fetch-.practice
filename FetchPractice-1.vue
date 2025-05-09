@@ -14,6 +14,7 @@ onMounted(
 
      const data = await res.json();
      // 因為不是ref('')，所以不用寫成res.value
+     // 用json()把取得的資料解析成 JavaScript 可以使用的物件或陣列
 
     users.value = data
   }
