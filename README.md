@@ -9,6 +9,10 @@
 - 錯誤處理：檢查 res.ok 狀態
 - 自訂 PUT / DELETE（進階請求）
 
-#### 啟動本機 JSON Server 假資料 API
+#### 啟動本機 JSON Server 假資料伺服器
 1. 安裝 JSON Server： `npm install -g json-server`
 2. 啟動伺服器： `json-server --watch db.json --port 3000`
+3. 在 Vue 專案中請求：( 依使用需求請求 )
+   - http://localhost:3000/users
+   - http://localhost:3000/posts
+   - http://localhost:3000/comments
