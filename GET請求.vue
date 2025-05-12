@@ -8,7 +8,9 @@ onMounted(
   async()=>{
   // async() 是非同步語法，通常跟await一起使用
 
-     const res =  await fetch('https://jsonplaceholder.typicode.com/users');
+     const res = await fetch('http://localhost:3000/users');
+     // const res =  await fetch('https://jsonplaceholder.typicode.com/users');
+     // 因為無法成功取得資料,所以自行設定 Local Fake API(本地假資料伺服器) -使用方式: 參"README.md"
      // res = response
      // 用 await 等待資料取得，不然他會直接進行下一步
 
